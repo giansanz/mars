@@ -1,0 +1,96 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: #f4f4f4;
+    background-color: #333; /* Default background color */
+    background: url('space_background.jpg') no-repeat center center fixed; /* Mars-themed background image */
+    background-size: cover;
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: 3em auto;
+    background-color: #1e2125; /* Dark background for the container */
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5); /* Optional: Adds shadow for better focus on the container */
+}
+
+header {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    width: 100%;
+}
+
+    header video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: auto;
+        height: auto;
+        min-width: 100%;
+        min-height: 100%;
+        transform: translate(-50%, -50%);
+        z-index: 1; /* Ensure it is above the background image */
+    }
+
+.header-content {
+    position: relative;
+    z-index: 3; /* Above the video */
+    text-align: center;
+    color: white;
+}
+
+.footer {
+    width: 100%;
+    background-color: #1e2125;
+    color: #f4f4f4;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto; /* Pushes it to the bottom of the flex container */
+}
+
+nav.navbar {
+    background-color: #2a2f33; /* Dark gray, similar to the theme */
+    width: 100%;
+    z-index: 5; /* Still higher than other content but not fixed */
+}
+
+.nav-link {
+    color: #f8f9fa;
+}
+
+    .nav-link:hover {
+        color: #a63d40;
+    }
+
+section {
+    border-top: 3px solid #a63d40;
+}
+
+#content {
+    margin: 2em;
+    padding: 1em;
+}
+
+.section-link {
+    text-decoration: none; /* Removes underline from links */
+    color: #f8f9fa; /* Initial color, white-ish */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+    .section-link:hover {
+        color: #a63d40; /* Color when hovered, Mars red */
+    }
+
+.container:hover {
+    background-color: rgba(166, 61, 64, 0.1); /* Light red background on hover, adjust opacity as needed */
+}
+
+nav.navbar {
+    background-color: #2a2f33; /* Dark gray */
+    width: 100%;
+}
+
+/* Existing styles */
+/* ... other styles ... */

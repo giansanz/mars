@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigating New Horizons: Mars Colonization</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet"> <!-- Link to the external CSS file -->
+    <style>
+        section {
+            text-align: center;
+        }
+
+        main {
+            text-align: center;
+        }
+
+        section h2, section p {
+            text-align: center;
+        }
+        .container {
+            width: 100%; /* Adjust the width as necessary, or keep it responsive */
+            border: 1px solid #ccc; /* Optional: Adds a border around the container for visibility */
+        }
+
+        .container img {
+                max-width: 100%;
+                height: auto;
+                object-fit: contain;
+            }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">Mars Colonization</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#technology">Technology</a></li>
+                <li class="nav-item"><a class="nav-link" href="#ethics">Ethics</a></li>
+                <li class="nav-item"><a class="nav-link" href="#logistics">Logistics</a></li>
+                <li class="nav-item"><a class="nav-link" href="#future">Future Prospects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#interactive">Interactive Features</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main-container">
+        <main>
+            <section id="introduction">
+                <h2>Technology Overview</h2>
+                <p>This section delves into the technological advancements necessary for establishing and sustaining human life on Mars. We explore crucial systems and innovations designed to support a Martian colony.</p>
+                <img src="bioplants.jpg" alt="Technological Innovations for Mars">
+            </section>
+
+            <section id="life-support">
+                <h2>Life Support Systems</h2>
+                <p>Establishing a reliable life support system is paramount for long-term survival on Mars. Research by Woo (2023) highlights the importance of advanced recycling technologies for air and water, essential for maintaining a breathable atmosphere and adequate hydration levels in closed environments. Genetically modified plants play a pivotal role in bioregenerative life support systems, offering the dual benefits of food production and air purification.</p>
+                <img src="plants.jpg" alt="Life Support Systems on Mars">
+            </section>
+
+            <section id="habitat-design">
+                <h2>Habitat Design and Construction</h2>
+                <p>The hostile Martian environment, characterized by extreme temperature fluctuations and high radiation levels, demands the creation of durable and self-sustaining habitats. Zhao (2023) examines the use of Martian regolith to develop concrete-like materials suitable for constructing robust structures. Such innovations not only reduce the dependency on Earth-based resources but also provide critical thermal and radiation insulation, ensuring the safety and well-being of human occupants.</p>
+                <img src="martian_housing.jpg" alt="Martian Habitat Design" style="width">
+            </section>
+
+            <section id="resource-utilization">
+                <h2>Resource Utilization</h2>
+                <p>Effective utilization of in-situ resources is fundamental to the success of Mars colonization. Techniques for extracting water from the Martian soil and converting atmospheric CO2 into oxygen are pivotal. These methods support not only life but also the production of fuel, which is essential for the operation of machinery and vehicles on Mars, as explored in studies by Yashchenko (2024).</p>
+                <img src="path_to_resource_utilization_image.jpg" alt="Resource Utilization on Mars">
+            </section>
+        </main>
+
+
+
+        <footer class="text-center p-3">
+            <p>Copyright © 2024 Mars Colonization. All Rights Reserved.</p>
+        </footer>
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('nav a').on('click', function (e) {
+                    e.preventDefault();
+                    var target = $(this).attr('href');
+                    var offset = $(target).offset().top - 60;
+                    $('html, body').animate({ scrollTop: offset }, 600);
+                });
+            });
+        </script>
+</body>
+</html>
