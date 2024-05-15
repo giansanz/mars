@@ -121,3 +121,17 @@ nav.navbar {
         height: 100%;
         border: 0;
     }
+
+img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+@media (max-width: 600px) {
+    img {
+        max-width: 90%; /* Slightly smaller to adjust for padding or margin */
+        margin: 10px auto; /* Adds more margin around the image */
+    }
+}
